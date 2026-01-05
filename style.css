@@ -1,0 +1,255 @@
+/* CSS reset, dit niet aanpassen! */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+/* BASIC INFO */
+body {
+    background-color: #F2E9FF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 0 20px;
+}
+
+
+/* Dit is de code voor de NAVIGATIEBAR */
+.navigatiebar ul {
+    list-style: none;
+    background-color: #bd99e0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    padding-left: 20px;
+    margin-right: auto;
+}
+
+.navigatiebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navigatiebar a:hover,
+.navigatiebar a:focus-visible {
+    background-color: #835dda;
+    outline: none;
+}
+
+/* HOMEPAGINA */
+
+/* container voor de INTRO */
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #F2E9FF;
+    border-radius: 10px;
+}
+
+/* boxen voor de intro */
+.intro-container .box {
+    flex: 1 1 250px;
+    background-color: #7e57c2;
+    color: white;
+    padding: 1.25rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+/* odd one out heel vaag maar middelste box  */
+.intro-container .box.box-licht {
+    flex: 2 1 400px;
+    background-color: transparent;
+    color: #7e57c2;
+}
+
+/* img in de boxen */
+.intro-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* container voor boxklein en daarnaast boxlang*/
+.boxkleinboxlang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+/* boxen van de container bockleinboxlang*/
+.box-klein {
+    flex: 1 1 250px;
+}
+
+.box-klein img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.box-lang {
+    flex: 2 1 300px;
+    background-color: white;
+    color: #7e57c2;
+    border-radius: 30px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* buttons voor in de lange box */
+.button {
+    display: inline-block;
+    margin: 12px 0;
+    padding: 6px 10px;
+    background-color: #7e5fb2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    align-self: flex-start;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: #cfc5e5;
+    outline: none;
+}
+
+/* OVER MIJ PAGINA */
+.overmij h1 {
+    color: #fc19d7;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* container voor overmij tekstplusplaatj*/
+.overmijtext {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* boxen van overmij tekstplusplaatje */
+.overmijtext .box-klein {
+    flex: 0 0 400px;
+    display: flex;
+}
+
+.overmijtext .box-klein img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.overmijtext .box-lang {
+    flex: 1;
+    color: #5B7DBE;
+    background-color: #00000000;
+}
+
+.overmijtext h2 {
+    margin-top: 0;
+}
+
+/* FAVORIETEN PAGINA */
+.favorietespots h1 {
+    color: #fc19d7;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* container voor favorieten pagina */
+.favorietespots-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* boxen voor in de container */
+.spots {
+    flex: 1 1 280px;
+    max-width: 320px;
+    background-color: #7e57c2;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* afbeeldingen vor in de container */
+.spots img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* wat ruimte tussen container en footer  */
+.favorietespots main {
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #580ed8;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
